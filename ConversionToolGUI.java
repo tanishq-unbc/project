@@ -115,27 +115,27 @@ public class ConversionToolGUI {
                     switch (categoryComboBox.getSelectedIndex()) {
                         case 0 -> {
                             switch (conversionComboBox.getSelectedIndex()) {
-                                case 0 -> resultText = value + " inches = " + (value * 2.54) + " cm";
-                                case 1 -> resultText = value + " feet = " + (value * 12) + " inches";
-                                case 2 -> resultText = value + " yards = " + (value * 3) + " feet";
-                                case 3 -> resultText = value + " miles = " + (value * 1.60934) + " km";
-                                case 4 -> resultText = value + " yards = " + (value * 0.9144) + " meters";
-                                case 5 -> resultText = value + " miles = " + (value * 5280) + " feet";
+                                case 0 -> resultText = value + " inches = " + (value * 2.54) + " cm" + "\r\n";
+                                case 1 -> resultText = value + " feet = " + (value * 12) + " inches" + "\r\n";
+                                case 2 -> resultText = value + " yards = " + (value * 3) + " feet" + "\r\n";
+                                case 3 -> resultText = value + " miles = " + (value * 1.60934) + " km" + "\r\n";
+                                case 4 -> resultText = value + " yards = " + (value * 0.9144) + " meters" + "\r\n";
+                                case 5 -> resultText = value + " miles = " + (value * 5280) + " feet" + "\r\n";
                             }
                         }
                         case 1 -> {
                             switch (conversionComboBox.getSelectedIndex()) {
-                                case 0 -> resultText = value + " ounces = " + (value * 28.3495) + " grams";
-                                case 1 -> resultText = value + " pounds = " + (value * 0.453592) + " kilograms";
-                                case 2 -> resultText = value + " kilograms = " + (value * 2.20462) + " pounds";
-                                case 3 -> resultText = value + " tonnes = " + (value * 1000) + " kilograms";
+                                case 0 -> resultText = value + " ounces = " + (value * 28.3495) + " grams" + "\r\n";
+                                case 1 -> resultText = value + " pounds = " + (value * 0.453592) + " kilograms" + "\r\n";
+                                case 2 -> resultText = value + " kilograms = " + (value * 2.20462) + " pounds" + "\r\n";
+                                case 3 -> resultText = value + " tonnes = " + (value * 1000) + " kilograms" + "\r\n";
                             }
                         }
-                        // Add remaining cases for Volume, Temperature, Speed, and Area
+                        // You can add remaining cases for Volume, Temperature, Speed, and Area
                     }
                     resultValue.setText(resultText);
                 } catch (NumberFormatException ex) {
-                    resultValue.setText("Invalid input!");
+                    resultValue.setText("Invalid input!" + "\r\n");
                 }
             }
         });
